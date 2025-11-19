@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regar Phone Service - Padangsidimpuan</title>
+    <!-- Memuat Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Konfigurasi Font dan Warna Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1D4ED8', // Biru Tua untuk Aksi Utama
+                        'secondary': '#374151', // Abu-abu Tua untuk Teks
+                        'accent': '#F59E0B', // Kuning/Oranye untuk Aksen
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Gaya kustom untuk memastikan responsivitas dan tampilan */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* Latar belakang sangat terang */
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #F59E0B;
+            margin-top: 8px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-primary">Regar Phone Service</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-secondary hover:text-primary transition duration-300">Beranda</a>
+                <a href="#layanan" class="text-secondary hover:text-primary transition duration-300">Layanan</a>
+                <a href="#kontak" class="text-secondary hover:text-primary transition duration-300">Kontak</a>
+                <a href="#lokasi" class="text-white bg-accent px-4 py-2 rounded-lg hover:bg-yellow-600 transition duration-300 shadow-lg">Kunjungi Kami</a>
+            </nav>
+            <!-- Tombol Menu Mobile (Placeholder) -->
+            <button class="md:hidden text-secondary focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bagian Utama (Hero Section) -->
+    <section id="home" class="bg-primary text-white py-20 md:py-32 text-center rounded-b-xl shadow-xl">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
+                Solusi Terbaik untuk Gadget Anda di Padangsidimpuan
+            </h2>
+            <p class="text-xl mb-8 font-light opacity-90">
+                Regar Phone Service: Cepat, Andal, dan Bergaransi. Kami memperbaiki segala jenis kerusakan ponsel.
+            </p>
+            <a href="#layanan" class="inline-block bg-accent text-white font-semibold px-8 py-3 rounded-full text-lg shadow-2xl hover:bg-yellow-600 transition duration-300 transform hover:scale-105">
+                Lihat Semua Layanan
+            </a>
+        </div>
+    </section>
+
+    <!-- Bagian Layanan -->
+    <section id="layanan" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="section-title text-3xl md:text-4xl font-extrabold text-secondary mb-12">Layanan Kami</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Kartu Layanan 1: Ganti Layar/LCD -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-primary">
+                    <div class="text-primary mb-4">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-secondary mb-2">Ganti Layar & LCD</h4>
+                    <p class="text-gray-600">Perbaikan cepat untuk layar pecah atau LCD yang bermasalah. Kami menggunakan suku cadang berkualitas.</p>
+                </div>
+
+                <!-- Kartu Layanan 2: Perbaikan Baterai & Daya -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-accent">
+                    <div class="text-accent mb-4">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-secondary mb-2">Baterai & Port Charging</h4>
+                    <p class="text-gray-600">Ganti baterai yang boros dan perbaikan port pengisian daya yang longgar atau rusak.</p>
+                </div>
+
+                <!-- Kartu Layanan 3: Perbaikan Software -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-primary">
+                    <div class="text-primary mb-4">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-4 1-1-4 4-1M15.25 7L16 4l4-1 1 4-4 1M7.5 4v.01M17.5 4v.01M17.5 20v.01M7.5 20v.01M4.5 10.5h.01M19.5 10.5h.01"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-secondary mb-2">Perbaikan Software</h4>
+                    <p class="text-gray-600">Atasi masalah bootloop, lupa pola/password, upgrade/downgrade OS, dan software error lainnya.</p>
+                </div>
+
+                <!-- Kartu Layanan 4: Perbaikan Mesin & Komponen -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-accent">
+                    <div class="text-accent mb-4">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-secondary mb-2">Perbaikan Hardware Kompleks</h4>
+                    <p class="text-gray-600">Perbaikan pada level motherboard (IC Power, IC Audio, dll.) dan penggantian komponen internal.</p>
+                </div>
+            </div>
+
+            <!-- Ajakan Bertindak -->
+            <div class="mt-12">
+                <a href="#kontak" class="inline-block bg-primary text-white font-semibold px-8 py-3 rounded-full text-lg shadow-xl hover:bg-blue-600 transition duration-300 transform hover:scale-105">
+                    Konsultasi Gratis Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Mengapa Memilih Kami -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="section-title text-3xl md:text-4xl font-extrabold text-secondary mb-12">Mengapa Memilih Regar?</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <!-- Keunggulan 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="flex items-center text-xl font-semibold text-primary mb-3">
+                        <span class="text-accent mr-3">✓</span> Teknisi Berpengalaman
+                    </h4>
+                    <p class="text-gray-600">Teknisi kami telah tersertifikasi dan memiliki jam terbang tinggi dalam menangani berbagai masalah ponsel.</p>
+                </div>
+                <!-- Keunggulan 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="flex items-center text-xl font-semibold text-primary mb-3">
+                        <span class="text-accent mr-3">✓</span> Suku Cadang Original/Kualitas Terbaik
+                    </h4>
+                    <p class="text-gray-600">Kami hanya menggunakan suku cadang dengan kualitas terbaik untuk menjamin daya tahan perbaikan.</p>
+                </div>
+                <!-- Keunggulan 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="flex items-center text-xl font-semibold text-primary mb-3">
+                        <span class="text-accent mr-3">✓</span> Garansi Perbaikan
+                    </h4>
+                    <p class="text-gray-600">Setiap perbaikan disertai garansi, memberikan Anda ketenangan pikiran setelah layanan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="kontak" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="section-title text-3xl md:text-4xl font-extrabold text-secondary mb-12">Hubungi Kami</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+                <!-- Detail Kontak -->
+                <div class="p-6 bg-gray-50 rounded-xl shadow-lg space-y-6">
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <div class="ml-4">
+                            <p class="text-lg font-semibold text-secondary">Telepon / WhatsApp</p>
+                            <!-- Nomor HP Diperbarui -->
+                            <a href="https://wa.me/6282294853257" target="_blank" class="text-primary hover:underline transition duration-300">+62 822-9485-3257 (Klik untuk WA)</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <div class="ml-4">
+                            <p class="text-lg font-semibold text-secondary">Email</p>
+                            <!-- Email Diperbarui -->
+                            <p class="text-gray-600">regardkurr@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div class="ml-4">
+                            <p class="text-lg font-semibold text-secondary">Jam Operasional</p>
+                            <p class="text-gray-600">Senin - Sabtu: 09:00 - 20:00 WIB</p>
+                            <p class="text-gray-600">Minggu/Hari Besar: Tutup</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulir Kontak Sederhana (Hanya Placeholder) -->
+                <div class="p-6 bg-gray-50 rounded-xl shadow-lg">
+                    <h4 class="text-2xl font-bold text-secondary mb-4">Kirim Pesan Cepat</h4>
+                    <form onsubmit="event.preventDefault(); showMessage('Pesan Anda berhasil dikirim! Kami akan segera menghubungi Anda.', 'success');">
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
+                            <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Nomor HP</label>
+                            <input type="tel" id="phone" name="phone" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700">Pesan / Jenis Kerusakan</label>
+                            <textarea id="message" name="message" rows="3" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white font-semibold py-2 rounded-lg hover:bg-blue-600 transition duration-300 shadow-md">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Lokasi -->
+    <section id="lokasi" class="py-16 md:py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="section-title text-3xl md:text-4xl font-extrabold text-secondary mb-12">Lokasi Kami di Padangsidimpuan</h3>
+
+            <div class="bg-white p-6 rounded-xl shadow-xl">
+                <p class="text-lg text-gray-700 mb-6">
+                    Kunjungi workshop kami untuk diagnosa langsung. Kami berada di pusat kota Padangsidimpuan.
+                </p>
+
+                <!-- Iframe Google Maps (Gunakan lokasi placeholder) -->
+                <div class="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-inner mb-6">
+                    <!-- Placeholder untuk Map. Ganti URL ini dengan URL Google Maps yang sebenarnya. -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15878.07725902183!2d99.27218698517524!3d1.3789033323067868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302c3886f0592965%3A0x7d287c2b3d11b306!2sPadang%20Sidempuan%20Selatan%2C%20Kota%20Padang%20Sidempuan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1700445579997!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="w-full h-full rounded-lg"
+                    ></iframe>
+                </div>
+                
+                <p class="text-sm text-gray-500">
+                    <strong class="text-secondary">Alamat Estimasi:</strong> Jl. Jenderal Sudirman No. X, Padangsidimpuan Selatan, Kota Padangsidimpuan, Sumatera Utara. (Mohon konfirmasi via WA sebelum berkunjung)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-300">
+            <p class="text-sm mb-2">&copy; 2024 Regar Phone Service Padangsidimpuan. Hak Cipta Dilindungi.</p>
+            <p class="text-xs">Layanan Perbaikan Ponsel Terbaik di Tapanuli Bagian Selatan.</p>
+        </div>
+    </footer>
+
+    <!-- Modul Pesan / Notifikasi (Menggantikan alert()) -->
+    <div id="message-box" class="fixed bottom-5 right-5 z-50 transition-all duration-500 ease-in-out opacity-0 translate-y-4 pointer-events-none">
+        <div class="bg-green-600 text-white p-4 rounded-lg shadow-2xl flex items-center max-w-xs" id="message-content">
+            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span id="message-text"></span>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk menampilkan pesan notifikasi (menggantikan alert)
+        function showMessage(text, type = 'success') {
+            const box = document.getElementById('message-box');
+            const content = document.getElementById('message-content');
+            const textElement = document.getElementById('message-text');
+
+            textElement.textContent = text;
+            content.className = `bg-${type === 'success' ? 'green-600' : 'red-600'} text-white p-4 rounded-lg shadow-2xl flex items-center max-w-xs`;
+            
+            // Tampilkan kotak pesan
+            box.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+            box.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+
+            // Sembunyikan setelah 4 detik
+            setTimeout(() => {
+                box.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                box.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+            }, 4000);
+        }
+
+        // Contoh: Navigasi halus saat mengklik link
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
