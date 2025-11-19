@@ -172,7 +172,6 @@
                         <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                         <div class="ml-4">
                             <p class="text-lg font-semibold text-secondary">Telepon / WhatsApp</p>
-                            <!-- Nomor HP Diperbarui -->
                             <a href="https://wa.me/6282294853257" target="_blank" class="text-primary hover:underline transition duration-300">+62 822-9485-3257 (Klik untuk WA)</a>
                         </div>
                     </div>
@@ -180,7 +179,6 @@
                         <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                         <div class="ml-4">
                             <p class="text-lg font-semibold text-secondary">Email</p>
-                            <!-- Email Diperbarui -->
                             <p class="text-gray-600">regardkurr@gmail.com</p>
                         </div>
                     </div>
@@ -194,21 +192,23 @@
                     </div>
                 </div>
 
-                <!-- Formulir Kontak Sederhana (Hanya Placeholder) -->
+                <!-- Formulir Kontak Sederhana (Sekarang diarahkan ke Formspree) -->
                 <div class="p-6 bg-gray-50 rounded-xl shadow-lg">
                     <h4 class="text-2xl font-bold text-secondary mb-4">Kirim Pesan Cepat</h4>
-                    <form onsubmit="event.preventDefault(); showMessage('Pesan Anda berhasil dikirim! Kami akan segera menghubungi Anda.', 'success');">
+                    <!-- PENTING: Ganti URL Formspree placeholder ini dengan URL unik Anda! -->
+                    <form action="https://formspree.io/f/xanvejln" method="POST">
+                        <input type="hidden" name="_replyto" value="regardkurr@gmail.com">
                         <div class="mb-4">
                             <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
-                            <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary">
+                            <input type="text" id="name" name="Nama" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary">
                         </div>
                         <div class="mb-4">
                             <label for="phone" class="block text-sm font-medium text-gray-700">Nomor HP</label>
-                            <input type="tel" id="phone" name="phone" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary">
+                            <input type="tel" id="phone" name="Nomor_HP" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary">
                         </div>
                         <div class="mb-6">
                             <label for="message" class="block text-sm font-medium text-gray-700">Pesan / Jenis Kerusakan</label>
-                            <textarea id="message" name="message" rows="3" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"></textarea>
+                            <textarea id="message" name="Pesan" rows="3" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"></textarea>
                         </div>
                         <button type="submit" class="w-full bg-primary text-white font-semibold py-2 rounded-lg hover:bg-blue-600 transition duration-300 shadow-md">
                             Kirim Pesan
@@ -231,7 +231,6 @@
 
                 <!-- Iframe Google Maps (Gunakan lokasi placeholder) -->
                 <div class="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-inner mb-6">
-                    <!-- Placeholder untuk Map. Ganti URL ini dengan URL Google Maps yang sebenarnya. -->
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15878.07725902183!2d99.27218698517524!3d1.3789033323067868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302c3886f0592965%3A0x7d287c2b3d11b306!2sPadang%20Sidempuan%20Selatan%2C%20Kota%20Padang%20Sidempuan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1700445579997!5m2!1sid!2sid" 
                         width="100%" 
@@ -288,7 +287,7 @@
             }, 4000);
         }
 
-        // Contoh: Navigasi halus saat mengklik link
+        // Navigasi halus saat mengklik link
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
